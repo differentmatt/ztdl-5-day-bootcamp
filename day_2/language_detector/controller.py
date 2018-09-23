@@ -41,6 +41,7 @@ def translate():
         sentence = submitted_data['sentence']
 
         # Predict the class corresponding to the sentence
+        # Values of pipeline: features already there
         predicted_class_n = model.predict([sentence])[0]
 
         # Get the corresponding class name and make it pretty
